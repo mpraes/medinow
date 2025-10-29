@@ -1,7 +1,30 @@
 [project]
 name = "medinow"
 version = "0.1.0"
-description = "Add your description here"
+description = "Medical appointment booking chatbot with WhatsApp integration and Google Calendar"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "composio-crewai==0.8.0",
+    "composio-google>=0.9.0",
+    "fastapi>=0.115.0",
+    "flask",
+    "google-genai>=1.46.0",
+    "langchain-groq>=1.0.0",
+    "litellm>=1.79.0",
+    "pydantic>=2.9.0",
+    "pydantic[email]>=2.9.0",
+    "python-dotenv>=1.2.1",
+    "pywhatkit>=5.4",
+    "twilio",
+    "uvicorn[standard]>=0.32.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27.0",
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.7.0",
+]

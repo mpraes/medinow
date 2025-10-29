@@ -1,0 +1,4 @@
+#!/bin/bash
+# Convenience script to run ngrok commands from scripts directory
+cd "$(dirname "$0")"
+./ngrok-setup.sh "$@"

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Convenience script to run docker commands from scripts directory
+cd "$(dirname "$0")"
+./docker-run.sh "$@"
